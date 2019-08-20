@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
   
   pigeon_hash.each do |listed_names, values|
     values.each do |pigeon_hash_values, array|
-      data.each do |cgl, value|
+      data.each do |color_name, color_hash|
         value.each do |color, name_array|
           name_array.each do |pigeon|
             if pigeon == name && colors == cgl
